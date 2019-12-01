@@ -1,0 +1,44 @@
+details summary::-webkit-details-marker {
+  display: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: inline-block;
+}
+
+:root {
+  --margin: 18px;
+}
+
+details {
+  margin: 10px 0 5px var(--margin);
+}
+
+summary {
+  margin: 0 0 5px calc(-1 * var(--margin));
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px blue dashed;
+}
+
+.video-player {
+  position: fixed;
+  top: 55px;
+  width: calc((100% - 800px)/2 - 20px);
+  min-width: 200px;
+  box-shadow: 0px 0px 5px black;
+  background: lightgray;
+}
+
+.menu {
+  background: lightgray;
+  position: fixed;
+}
+
+span[data-t] {
+  color: blue;
+  text-decoration: underline dotted blue;
+}
