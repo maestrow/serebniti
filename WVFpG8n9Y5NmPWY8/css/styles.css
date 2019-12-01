@@ -1,0 +1,71 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+details summary::-webkit-details-marker {
+  display: none
+}
+
+h1 { font-size: 1.4em; }
+
+h2 { font-size: 1.2em; }
+
+h3 { font-size: 1em; }
+
+h4 { font-size: 0.84em; }
+
+h5 { font-size: 0.75em; }
+
+h6 { font-size: 0.67em; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px 0;
+  font-weight: normal;
+  font-family: 'Philosopher', sans-serif;
+}
+
+:root {
+  --margin: 18px;
+}
+
+details {
+  margin: 0 0 0 var(--margin);
+}
+
+summary {
+  margin: 0 0 0 calc(-1 * var(--margin));
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  /* border: 1px blue dashed; */
+}
+
+.video-player {
+  position: fixed;
+  top: 55px;
+  width: calc((100% - 800px)/2 - 20px);
+  min-width: 200px;
+  box-shadow: 0px 0px 5px black;
+  background: lightgray;
+}
+
+.menu {
+  background: lightgray;
+  position: fixed;
+  font-size: 1.5em;
+}
+
+.menu a {
+  text-decoration: none;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+
+span[data-t] {
+  color: blue;
+  text-decoration: underline solid blue;
+  cursor: pointer;
+}
